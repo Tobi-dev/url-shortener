@@ -1,16 +1,17 @@
 package main
 
 import (
+	"./configs"
 	Connection "./database"
 	"./model"
 	"./repository"
-	"./configs"
+	"fmt"
 	"./helpers"
 )
 
 func main(){
 
-	helpers.GenerateRandomSlug("http://google.de")
+	fmt.Println(helpers.GenerateRandomSlug())
 
 	db := Connection.GetDB()
 

@@ -1,18 +1,17 @@
 package controller
 
 import (
+	"../helpers"
+	"../model"
+	"../repository"
+	"../service"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"../model"
-	"../helpers"
-	"../service"
-	"../repository"
 )
 
 func InitUrlRoutes(route *gin.Engine, urlRepository *repository.UrlRepository){
 	route.POST("/create", func(context *gin.Context){
 		var url model.Url
-
 		err := context.ShouldBindJSON(&url)
 
 		if err != nil {
@@ -26,8 +25,6 @@ func InitUrlRoutes(route *gin.Engine, urlRepository *repository.UrlRepository){
 		code := http.StatusOK
 
 		response := service.CreateUrl(&url, *urlRepository)
-
-		service.CreateUrl(&url, *urlRepository)
 
 		if !response.Success{
 			code = http.StatusBadRequest

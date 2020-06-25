@@ -35,7 +35,7 @@ func (r *UrlRepository) FindAll() RepositoryResult {
 	return RepositoryResult{Result: &url}
 }
 
-func (r *UrlRepository) FindOneById(slug string) RepositoryResult {
+func (r *UrlRepository) FindOneBySlug(slug string) RepositoryResult {
 	var url model.Url
 
 	err := r.db.Where(&model.Url{Slug: slug}).Take(&url).Error

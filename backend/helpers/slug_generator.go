@@ -1,13 +1,16 @@
 package helpers
 
-import(
-	"fmt"
+import (
+	"math/rand"
 )
 
-func GenerateRandomSlug(url string){
-	runes := []rune(url)
+func GenerateRandomSlug() string{
+	var letterRunes = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
 
-	for i := len(runes) - 1; i > 1; i-- {
-		fmt.Printf("%c", runes[i])
-	}
+		b := make([]rune, 5)
+		for i := range b {
+			b[i] = letterRunes[rand.Intn(len(letterRunes))]
+		}
+
+	return string(b)
 }
