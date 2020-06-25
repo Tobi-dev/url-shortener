@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54290620-49a6-43a7-81e2-dfd9057cc2fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/url_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/url_controller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers/slug_generator.go" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/slug_generator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/url.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/url.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/url_respository.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/url_respository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/url_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/url_service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592904460462</updated>
       <workItem from="1592904461904" duration="4760000" />
-      <workItem from="1593089553457" duration="2677000" />
+      <workItem from="1593089553457" duration="3272000" />
     </task>
     <servers />
   </component>
